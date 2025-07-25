@@ -7,7 +7,7 @@ export default function BrowserRouter({ children }) {
   const [currentURL, setCurrentURL] = useState(new URL(window.location.href));
 
   useEffect(() => {
-    console.log("Setting up popstate listener");
+    // console.log("Setting up popstate listener");
 
     function handlePopStateEvent(e) {
       console.log(e);
