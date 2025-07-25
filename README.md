@@ -1,12 +1,15 @@
-# React + Vite
+# 🧭 React Router (Custom)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple client-side routing library built with React (without any external libraries).
 
-Currently, two official plugins are available:
+It includes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- A `<BrowserRouter>` that tracks the current URL
+- A `<Route>` component that shows content based on the path
+- A custom `<Link>` that updates the URL without reloading the page
 
-## Expanding the ESLint configuration
+The goal was to better understand how routing works in single-page apps — like how to change the URL using the History API, and how to show different components depending on the current path.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project helped me start connecting what I had learned about `useState`, `useEffect`, and `useContext` in a more real way.
+
+Built with [Vite](https://vitejs.dev/) for fast development and a lightweight setup.
