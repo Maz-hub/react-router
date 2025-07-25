@@ -11,6 +11,8 @@ export default function BrowserRouter({ children }) {
 
     function handlePopStateEvent(e) {
       console.log(e);
+      // set the url to be updated
+      setCurrentURL(new URL(window.location.href));
     }
 
     window.addEventListener("popstate", handlePopStateEvent);
